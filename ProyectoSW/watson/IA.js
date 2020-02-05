@@ -26,18 +26,30 @@ visualRecognition.classify(params, function(err, res) {
 
 */
 
-
-const VisualRecognitionV4 = require('ibm-watson/visual-recognition/v4');
+//1. he cambiado a v3 según la documentación del repositorio en git (v4 es para python no para node)
+const VisualRecognitionV4 = require('ibm-watson/visual-recognition/v3');
 const { IamAuthenticator } = require('ibm-watson/auth');
 var fs = require('fs')
+
+
+
 const visualRecognition = new VisualRecognitionV4({
-  version: '2019-02-11',
+  //2. he colocado la versión en la que se creó mi apykey
+  version: '2020-02-05',
+  
   authenticator: new IamAuthenticator({
-   // apikey: 'UOY4lz0utQcvPTa3H9CppINvwbMTFIaizUHeDZgvAjMj',
-     apikey: 'mPmyhzibcxVZ-RqeXfu42QCr7VxLlJJdak9iO4KPJMej',
+    //3.  he cambiado la apikey 1Gv2HoSLBAUhEB2QmhPY8OCI5LKa52S3DIPSgNaeowhw a mi proyecto de ibmcloud
+     apikey: '1Gv2HoSLBAUhEB2QmhPY8OCI5LKa52S3DIPSgNaeowhw',
   }),
-  url: 'https://gateway.watsonplatform.net/visual-recognition/api',
+  
+  //4. he colocado la dirección url que corresponde a mi instancia en ibmcloud
+  url: 'https://api.us-south.visual-recognition.watson.cloud.ibm.com/instances/98b82d5e-0534-40f7-b23e-7da3fea938c8',
   disableSslVerification: true,
+  
+  headers: {
+    'X-Watson-Learning-Opt-Out': 'true'
+  }
+  
 });
 
 
@@ -54,9 +66,9 @@ class IaWatson{
             }
           ],
           //collectionIds: ['26c2ed88-9daa-4474-9621-6fc41bd76c9b','154baf83-411c-4250-83e9-5dec4d9f0b35'],
-          collectionIds: ['77a128b5-c9e2-4bdf-9c38-4019f1fc12f3', '7dbe7129-f941-46ff-9f80-64363cf7c146'],
+          collectionIds: ['d43688e9-955f-44c7-aec8-8def5194e636'],
           features: ['objects'],
-          threshold: threshold
+          threshold: 55
         };
         
         return visualRecognition.analyze(params);
