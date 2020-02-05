@@ -1,24 +1,29 @@
-/*var VisualRecognitionV3 = require('watson-developer-cloud/visual-recognition/v3');
+/*
+
+'use strict';
+
+var VisualRecognitionV3 = require('ibm-watson/visual-recognition/v3');
 var fs = require('fs');
 
 var visualRecognition = new VisualRecognitionV3({
-  version: '2018-03-19',
-  iam_apikey: 'mPmyhzibcxVZ-RqeXfu42QCr7VxLlJJdak9iO4KPJMej'
+  iam_apikey: 'INSERT YOUR IAM API KEY HERE',
+  version: '2020-02-05'
 });
 
-var images_file= fs.createReadStream('./images.jpeg');
-
 var params = {
-  url: images_file,
+  // An image file (.jpg, .png) or .zip file with images
+  // images_file: fs.createReadStream('./resources/car.png')
+  images_file: fs.createReadStream('./resources/images.zip')
 };
 
-visualRecognition.classify(params, function(err, response) {
+visualRecognition.classify(params, function(err, res) {
   if (err) {
     console.log(err);
   } else {
-    console.log(JSON.stringify(response, null, 2))
+    console.log(JSON.stringify(res, null, 2));
   }
 });
+
 */
 
 
