@@ -26,12 +26,12 @@ const VisualRecognitionV4 = require('ibm-watson/visual-recognition/v4');
 const { IamAuthenticator } = require('ibm-watson/auth');
 var fs = require('fs')
 const visualRecognition = new VisualRecognitionV4({
-  version: '2019-02-11',
+  version: '2019-02-11',//5/2/2020 
   authenticator: new IamAuthenticator({
-   // apikey: 'UOY4lz0utQcvPTa3H9CppINvwbMTFIaizUHeDZgvAjMj',
-     apikey: 'mPmyhzibcxVZ-RqeXfu42QCr7VxLlJJdak9iO4KPJMej',
+   // apikey: 'mPmyhzibcxVZ-RqeXfu42QCr7VxLlJJdak9iO4KPJMej',
+     apikey: '1Gv2HoSLBAUhEB2QmhPY8OCI5LKa52S3DIPSgNaeowhw',
   }),
-  url: 'https://gateway.watsonplatform.net/visual-recognition/api',
+  url: 'https://api.us-south.visual-recognition.watson.cloud.ibm.com/instances/98b82d5e-0534-40f7-b23e-7da3fea938c8',
   disableSslVerification: true,
 });
 
@@ -40,7 +40,7 @@ class IaWatson{
      constructor(){}
 
      consultar(imagen){
-        var threshold = 0.20;
+        var threshold = 0.50;
         const params = {
           imagesFile: [
             {
@@ -49,7 +49,7 @@ class IaWatson{
             }
           ],
           //collectionIds: ['26c2ed88-9daa-4474-9621-6fc41bd76c9b','154baf83-411c-4250-83e9-5dec4d9f0b35'],
-          collectionIds: ['77a128b5-c9e2-4bdf-9c38-4019f1fc12f3', '7dbe7129-f941-46ff-9f80-64363cf7c146'],
+          collectionIds: ['d43688e9-955f-44c7-aec8-8def5194e636'],
           features: ['objects'],
           threshold: threshold
         };
