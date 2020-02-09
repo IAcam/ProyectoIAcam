@@ -3,7 +3,7 @@ var request = new XMLHttpRequest();
 const imagen = document.querySelector('#imagen');
 
 function obtener(i){
-    console.log(i)
+  
      request.open('POST', 'http://localhost:3000/watson');
      request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
      request.onload = function() {
@@ -11,7 +11,7 @@ function obtener(i){
       console.log(data)
 
        var img = data.images[0].source.filename;
-       imagen.innerHTML = ` <img id="picture" class="picture"  width="300" height="250" src="http://192.168.0.150:81/IA/imagenes/${img}">`
+       imagen.innerHTML = ` <img id="picture" class="picture"  width="450" height="400" src="./imagenes/${img}">`
        var name = data.images[0].objects.collections[0].objects[0].object
       
        if (request.status >= 200 && request.status < 400) {
@@ -20,10 +20,10 @@ function obtener(i){
             
             
             var dimImg = data.images[0].dimensions;
-            var scaleH =  (dim.height * 250 ) / dimImg.height;
-            var scaleW = (dim.width * 300) / dimImg.width;
-            var scaleT = (dim.top * 300) / dimImg.width;
-            var scaleL = (dim.left * 250) / dimImg.height;
+            var scaleH =  (dim.height * 400 ) / dimImg.height;
+            var scaleW = (dim.width * 450) / dimImg.width;
+            var scaleT = (dim.top * 450) / dimImg.width;
+            var scaleL = (dim.left * 400) / dimImg.height;
             imagen.innerHTML += `
            
     

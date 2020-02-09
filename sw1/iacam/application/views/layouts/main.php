@@ -116,7 +116,7 @@
                             <ul class="treeview-menu">
                                 
                                 <li>
-                                    <a href="<?php echo site_url('camara/indexV');?>"><i class="fa fa-list-ul"></i> Lista de Camaras</a>
+                                    <a href="<?php echo site_url('application/views/camara/indexV.php');?>"><i class="fa fa-list-ul"></i> Lista de Camaras</a>
                                 </li>
                             </ul>
                         </li>
@@ -126,10 +126,10 @@
                             </a>
                             <ul class="treeview-menu">
 								<li class="active">
-                                    <a href="<?php echo site_url('capturaimagen/add');?>"><i class="fa fa-plus"></i> Add</a>
+                                    <a href="<?php echo site_url('application/views/capturaimagen/add');?>"><i class="fa fa-plus"></i> Add</a>
                                 </li>
 								<li>
-                                    <a href="<?php echo site_url('capturaimagen/index');?>"><i class="fa fa-list-ul"></i> Lista</a>
+                                    <a href="<?php echo site_url('application/views/capturaimagen/index');?>"><i class="fa fa-list-ul"></i> Lista</a>
                                 </li>
 							</ul>
                         </li>
@@ -139,10 +139,10 @@
                             </a>
                             <ul class="treeview-menu">
 								<li class="active">
-                                    <a href="<?php echo site_url('configuracion/add');?>"><i class="fa fa-plus"></i> Add</a>
+                                    <a href="<?php echo site_url('application/views/configuracion/add');?>"><i class="fa fa-plus"></i> Add</a>
                                 </li>
 								<li>
-                                    <a href="<?php echo site_url('configuracion/index');?>"><i class="fa fa-list-ul"></i> Lista</a>
+                                    <a href="<?php echo site_url('application/views/configuracion/index');?>"><i class="fa fa-list-ul"></i> Lista</a>
                                 </li>
 							</ul>
                         </li>
@@ -152,10 +152,10 @@
                             </a>
                             <ul class="treeview-menu">
 								<li class="active">
-                                    <a href="<?php echo site_url('evento/add');?>"><i class="fa fa-plus"></i> Adicionar nuevo</a>
+                                    <a href="<?php echo site_url('application/views/evento/add');?>"><i class="fa fa-plus"></i> Adicionar nuevo</a>
                                 </li>
 								<li>
-                                    <a href="<?php echo site_url('evento/index');?>"><i class="fa fa-list-ul"></i> Lista</a>
+                                    <a href="<?php echo site_url('application/views/evento/index');?>"><i class="fa fa-list-ul"></i> Lista</a>
                                 </li>
 							</ul>
                         </li>
@@ -165,10 +165,10 @@
                             </a>
                             <ul class="treeview-menu">
 								<li class="active">
-                                    <a href="<?php echo site_url('notificacion/add');?>"><i class="fa fa-plus"></i> adicionar nuevo</a>
+                                    <a href="<?php echo site_url('application/views/notificacion/add');?>"><i class="fa fa-plus"></i> adicionar nuevo</a>
                                 </li>
 								<li>
-                                    <a href="<?php echo site_url('notificacion/index');?>"><i class="fa fa-list-ul"></i> Lista</a>
+                                    <a href="<?php echo site_url('application/views/notificacion/index');?>"><i class="fa fa-list-ul"></i> Lista</a>
                                 </li>
 							</ul>
                         </li>
@@ -178,10 +178,10 @@
                             </a>
                             <ul class="treeview-menu">
 								<li class="active">
-                                    <a href="<?php echo site_url('usuario/add');?>"><i class="fa fa-plus"></i> adicionar nuevo</a>
+                                    <a href="<?php echo site_url('application/views/usuario/add');?>"><i class="fa fa-plus"></i> adicionar nuevo</a>
                                 </li>
 								<li>
-                                    <a href="<?php echo site_url('usuario/index');?>"><i class="fa fa-list-ul"></i> Lista de usuario</a>
+                                    <a href="<?php echo site_url('application/views/usuario/index');?>"><i class="fa fa-list-ul"></i> Lista de usuario</a>
                                 </li>
 							</ul>
                         </li>

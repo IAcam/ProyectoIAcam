@@ -14,7 +14,7 @@
             <div class="box-header with-border">
                 <h3 class="box-title">camara</h3>
             </div>
-            <?php echo form_open('camara/visualizarCamara/'.$camara['id']); ?>
+            <?php echo form_open('application/views/camara/visualizarCamara/'.$camara['id']); ?>
             <div class="box-body">
                 <div class="row clearfix">
                     <div class="col-md-6">
@@ -25,7 +25,7 @@
                     </div>
 
                     <div class="col-sm-9">
-                      <iframe src="http://192.168.0.20"  width="720" height="640"></iframe>
+                      <iframe src="http://192.168.0.13:8080"  width="720" height="640"></iframe>
                     </div>
 
                     <div class="col-sm-3">

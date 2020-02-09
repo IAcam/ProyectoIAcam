@@ -40,7 +40,7 @@ class IaWatson{
      constructor(){}
 
      consultar(imagen){
-        var threshold = 0.50;
+        var threshold = 0.40;
         const params = {
           imagesFile: [
             {
@@ -53,7 +53,7 @@ class IaWatson{
           features: ['objects'],
           threshold: threshold
         };
-        
+        console.log(params)
         return visualRecognition.analyze(params);
           /*.then(response => {
            // console.log(JSON.stringify(response.result, null, 2))
