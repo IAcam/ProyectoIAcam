@@ -37,7 +37,7 @@ class Camara extends CI_Controller{
         if(isset($_POST) && count($_POST) > 0)     
         {   
             $params = array(
-				'dirip' => $this->input->post('dirip'),
+                'dirip' => $this->input->post('dirip'),
             );
             
             $camara_id = $this->Camara_model->add_camara($params);
@@ -80,7 +80,7 @@ class Camara extends CI_Controller{
             if(isset($_POST) && count($_POST) > 0)     
             {   
                 $params = array(
-					'dirip' => $this->input->post('dirip'),
+                    'dirip' => $this->input->post('dirip'),
                 );
 
                 $this->Camara_model->update_camara($id,$params);            

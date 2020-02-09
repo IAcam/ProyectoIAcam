@@ -3,24 +3,24 @@
         <div class="box">
             <div class="box-header">
                 <h3 class="box-title">Camara Listing</h3>
-            	<div class="box-tools">
+                <div class="box-tools">
                     <a href="<?php echo site_url('camara/add'); ?>" class="btn btn-success btn-sm">Add</a> 
                 </div>
             </div>
             <div class="box-body">
                 <table class="table table-striped">
                     <tr>
-						<th>ID</th>
-						<th>Direccion IP</th>
-						
+                        <th>ID</th>
+                        <th>Direccion IP</th>
+                        
                          <th>Editar</th>
                          <th>Eliminar</th>
                      </tr>
                     <?php foreach($camara as $c){ ?>
                     <tr>
-						<td><?php echo $c['id']; ?></td>
-						<td><?php echo $c['dirip']; ?></td>
-						<td>                            
+                        <td><?php echo $c['id']; ?></td>
+                        <td><?php echo $c['dirip']; ?></td>
+                        <td>                            
 
                             <a href="<?php echo site_url('camara/edit/'.$c['id']); ?>" class="btn btn-info btn-xs"><span class="fa fa-pencil"></span> </a> 
                          </td>

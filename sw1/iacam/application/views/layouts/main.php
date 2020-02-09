@@ -98,14 +98,27 @@
                         </li>
 						<li>
                             <a href="#">
+                                <i class="fa fa-th"></i> <span>Bitacora</span>
+                            </a>
+                            <ul class="treeview-menu">
+								<li class="active">
+                                    <a href="<?php echo site_url('bitacora/add');?>"><i class="fa fa-plus"></i> Adicionar nuevo</a>
+                                </li>
+								<li>
+                                    <a href="<?php echo site_url('bitacora/index');?>"><i class="fa fa-list-ul"></i> Lista</a>
+                                </li>
+							</ul>
+                        </li>
+						<li>
+                            <a href="#">
                                 <i class="fa fa-camera"></i> <span>Camara</span>
                             </a>
                             <ul class="treeview-menu">
 								<li class="active">
-                                    <a href="<?php echo site_url('camara/add');?>"><i class="fa fa-plus"></i> Add</a>
+                                    <a href="<?php echo site_url('camara/add');?>"><i class="fa fa-plus"></i> Adicionar nuevo</a>
                                 </li>
 								<li>
-                                    <a href="<?php echo site_url('camara/index');?>"><i class="fa fa-list-ul"></i> Listing</a>
+                                    <a href="<?php echo site_url('camara/index');?>"><i class="fa fa-list-ul"></i> Lista</a>
                                 </li>
 							</ul>
                         </li>
@@ -116,7 +129,7 @@
                             <ul class="treeview-menu">
                                 
                                 <li>
-                                    <a href="<?php echo site_url('application/views/camara/indexV.php');?>"><i class="fa fa-list-ul"></i> Lista de Camaras</a>
+                                    <a href="<?php echo site_url('camara/indexV');?>"><i class="fa fa-list-ul"></i> Lista de Camaras</a>
                                 </li>
                             </ul>
                         </li>

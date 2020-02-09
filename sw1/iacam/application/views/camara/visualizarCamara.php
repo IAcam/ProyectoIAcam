@@ -14,7 +14,7 @@
             <div class="box-header with-border">
                 <h3 class="box-title">camara</h3>
             </div>
-            <?php echo form_open('application/views/camara/visualizarCamara/'.$camara['id']); ?>
+            <?php echo form_open('camara/visualizarCamara/'.$camara['id']); ?>
             <div class="box-body">
                 <div class="row clearfix">
                     <div class="col-md-6">
@@ -32,9 +32,16 @@
                         <div class="picture-container" id="imagen"> </div>
                     </div>
                 </div>
+              
+                     <div class="col-sm-8"><iframe src="https://www.w3schools.com/" height="640" width="720"></iframe></div>
+                     <div class="col-sm-3"><iframe src="https://es-la.facebook.com/" height="350" width="400"></iframe></div>
+                
+                
             </div>
+            
             <center>
-   
+           
+
             
             <div class="box-footer">
                
