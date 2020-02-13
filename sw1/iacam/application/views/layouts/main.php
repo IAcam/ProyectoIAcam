@@ -257,5 +257,6 @@
         <script src="<?php echo site_url('resources/js/moment.js');?>"></script>
         <script src="<?php echo site_url('resources/js/bootstrap-datetimepicker.min.js');?>"></script>
         <script src="<?php echo site_url('resources/js/global.js');?>"></script>
+	<script src="<?php echo site_url('resources/js/watson.js');?>"></script>
     </body>
 </html>
