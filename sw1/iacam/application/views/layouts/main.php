@@ -27,9 +27,9 @@
                 <!-- Logo -->
                 <a href="" class="logo">
                     <!-- mini logo for sidebar mini 50x50 pixels -->
-                    <span class="logo-mini">iacam</span>
+                    <span class="logo-mini">IACAM</span>
                     <!-- logo for regular state and mobile devices -->
-                    <span class="logo-lg">iacam</span>
+                    <span class="logo-lg">IACAM</span>
                 </a>
                 <!-- Header Navbar: style can be found in header.less -->
                 <nav class="navbar navbar-static-top">
@@ -79,7 +79,7 @@
                 <!-- sidebar: style can be found in sidebar.less -->
                 <section class="sidebar">
                     <!-- Sidebar user panel -->
-                    <div class="user-panel" width="900px" height="600px">
+                    <div class="user-panel">
                         <div class="pull-left image">
                             <img src="<?php echo site_url('resources/img/user.jpg');?>" class="img-circle" alt="User Image">
                         </div>
@@ -135,14 +135,14 @@
                         </li>
 						<li>
                             <a href="#">
-                                <i class="fa fa-picture-o"></i> <span>Capturaimagen</span>
+                                <i class="fa fa-file-image-o"></i> <span>Capturaimagen</span>
                             </a>
                             <ul class="treeview-menu">
 								<li class="active">
-                                    <a href="<?php echo site_url('application/views/capturaimagen/add');?>"><i class="fa fa-plus"></i> Add</a>
+                                    <a href="<?php echo site_url('capturaimagen/add');?>"><i class="fa fa-plus"></i> Adicionar nuevo</a>
                                 </li>
 								<li>
-                                    <a href="<?php echo site_url('application/views/capturaimagen/index');?>"><i class="fa fa-list-ul"></i> Lista</a>
+                                    <a href="<?php echo site_url('capturaimagen/index');?>"><i class="fa fa-list-ul"></i> Lista</a>
                                 </li>
 							</ul>
                         </li>
@@ -152,10 +152,10 @@
                             </a>
                             <ul class="treeview-menu">
 								<li class="active">
-                                    <a href="<?php echo site_url('application/views/configuracion/add');?>"><i class="fa fa-plus"></i> Add</a>
+                                    <a href="<?php echo site_url('configuracion/add');?>"><i class="fa fa-plus"></i> Adicionar nuevo</a>
                                 </li>
 								<li>
-                                    <a href="<?php echo site_url('application/views/configuracion/index');?>"><i class="fa fa-list-ul"></i> Lista</a>
+                                    <a href="<?php echo site_url('configuracion/index');?>"><i class="fa fa-list-ul"></i> Lista</a>
                                 </li>
 							</ul>
                         </li>
@@ -165,40 +165,39 @@
                             </a>
                             <ul class="treeview-menu">
 								<li class="active">
-                                    <a href="<?php echo site_url('application/views/evento/add');?>"><i class="fa fa-plus"></i> Adicionar nuevo</a>
+                                    <a href="<?php echo site_url('evento/add');?>"><i class="fa fa-plus"></i> Adicionar nuevo</a>
                                 </li>
 								<li>
-                                    <a href="<?php echo site_url('application/views/evento/index');?>"><i class="fa fa-list-ul"></i> Lista</a>
+                                    <a href="<?php echo site_url('evento/index');?>"><i class="fa fa-list-ul"></i> Lista</a>
                                 </li>
 							</ul>
                         </li>
 						<li>
                             <a href="#">
-                                <i class="fa fa-bell-slash"></i> <span>Notificacion</span>
+                                <i class="fa fa-bell-o"></i> <span>Notificacion</span>
                             </a>
                             <ul class="treeview-menu">
 								<li class="active">
-                                    <a href="<?php echo site_url('application/views/notificacion/add');?>"><i class="fa fa-plus"></i> adicionar nuevo</a>
+                                    <a href="<?php echo site_url('notificacion/add');?>"><i class="fa fa-plus"></i> Adicionar nuevo</a>
                                 </li>
 								<li>
-                                    <a href="<?php echo site_url('application/views/notificacion/index');?>"><i class="fa fa-list-ul"></i> Lista</a>
+                                    <a href="<?php echo site_url('notificacion/index');?>"><i class="fa fa-list-ul"></i>Lista</a>
                                 </li>
 							</ul>
                         </li>
 						<li>
                             <a href="#">
-                                <i class="fa fa-user-o"></i> <span>Usuario</span>
+                                <i class="fa fa-users"></i> <span>Usuario</span>
                             </a>
                             <ul class="treeview-menu">
 								<li class="active">
-                                    <a href="<?php echo site_url('application/views/usuario/add');?>"><i class="fa fa-plus"></i> adicionar nuevo</a>
+                                    <a href="<?php echo site_url('usuario/add');?>"><i class="fa fa-plus"></i> Adicionar nuevo</a>
                                 </li>
 								<li>
-                                    <a href="<?php echo site_url('application/views/usuario/index');?>"><i class="fa fa-list-ul"></i> Lista de usuario</a>
+                                    <a href="<?php echo site_url('usuario/index');?>"><i class="fa fa-list-ul"></i>Lista</a>
                                 </li>
 							</ul>
                         </li>
-                        
                     </ul>
                 </section>
                 <!-- /.sidebar -->
@@ -216,9 +215,7 @@
                 <!-- /.content -->
             </div>
             <!-- /.content-wrapper -->
-            <footer class="main-footer">
-                <strong>Generated By <a href="http://www.crudigniter.com/">CRUDigniter</a> 3.2</strong>
-            </footer>
+           
 
             <!-- Control Sidebar -->
             <aside class="control-sidebar control-sidebar-dark">
@@ -260,6 +257,5 @@
         <script src="<?php echo site_url('resources/js/moment.js');?>"></script>
         <script src="<?php echo site_url('resources/js/bootstrap-datetimepicker.min.js');?>"></script>
         <script src="<?php echo site_url('resources/js/global.js');?>"></script>
-        <script src="<?php echo site_url('resources/js/watson.js');?>"></script>
     </body>
 </html>

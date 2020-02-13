@@ -17,7 +17,7 @@
 								{
 									$selected = ($camara['id'] == $this->input->post('idcaptura')) ? ' selected="selected"' : "";
 
-									echo '<option value="'.$camara['id'].'" '.$selected.'>'.$camara['dirip'].'</option>';
+									echo '<option value="'.$camara['id'].'" '.$selected.'>'.$camara['id'].'</option>';
 								} 
 								?>
 							</select>

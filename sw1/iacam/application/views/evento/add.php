@@ -17,7 +17,7 @@
 								{
 									$selected = ($capturaimagen['id'] == $this->input->post('idimagen')) ? ' selected="selected"' : "";
 
-									echo '<option value="'.$capturaimagen['id'].'" '.$selected.'>'.$capturaimagen['archivo'].'</option>';
+									echo '<option value="'.$capturaimagen['id'].'" '.$selected.'>'.$capturaimagen['id'].'</option>';
 								} 
 								?>
 							</select>

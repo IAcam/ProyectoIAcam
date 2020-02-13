@@ -2,13 +2,13 @@
     <div class="col-md-12">
         <div class="box">
             <div class="box-header">
-                <h3 class="box-title">Camara Listing</h3>
+                <h3 class="box-title">LISTA DE CAMARAS EN USO</h3>
             	
             </div>
             <div class="box-body">
                 <table class="table table-striped">
                     <tr>
-						<th>ID</th>
+						<th>NRO</th>
 						<th>Direccion IP</th>
 						<th>Accion</th>
                     </tr>

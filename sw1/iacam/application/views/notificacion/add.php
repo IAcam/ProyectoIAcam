@@ -33,7 +33,7 @@
 								{
 									$selected = ($evento['id'] == $this->input->post('idevento')) ? ' selected="selected"' : "";
 
-									echo '<option value="'.$evento['id'].'" '.$selected.'>'.$evento['tipodeteccion'].'</option>';
+									echo '<option value="'.$evento['id'].'" '.$selected.'>'.$evento['id'].'</option>';
 								} 
 								?>
 							</select>
@@ -49,7 +49,7 @@
 								{
 									$selected = ($configuracion['id'] == $this->input->post('idconfig')) ? ' selected="selected"' : "";
 
-									echo '<option value="'.$configuracion['id'].'" '.$selected.'>'.$configuracion['tiempoGrabacion'].'</option>';
+									echo '<option value="'.$configuracion['id'].'" '.$selected.'>'.$configuracion['id'].'</option>';
 								} 
 								?>
 							</select>
