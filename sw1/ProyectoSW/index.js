@@ -74,7 +74,7 @@ app.get('/notificacion', (req, res)=>{
  
 
 app.get('/rutas', (req,res)=>{
-  dir.readFiles('c:/wamp64/www/IA/imagenes/',function(err, content, next) {
+  dir.readFiles('/home/titon/Disk/U.A.G.R.M./SOFTWARE_I/2da vuelta/Software/RepositorioGit/sw1/IA/imagenes',function(err, content, next) {
         if (err) throw err;
        // console.log('content:', content);
         next();
